@@ -9,7 +9,7 @@ export async function getServerSideProps() {
   return { props: { cards }};
 }
 
-export default function Home() {
+export default function Home({cards}) {
   return (
     <div className="container">
       <Head>
@@ -18,10 +18,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header title="LOB Cards" />
+        {cards.map((card) => (
+          <div>
+            <div className="info">
+              <div className="id">ID:{card.id}</div>
+              <div className="name">Name: {card.name}</div>
+              <div className="type">Type: {card.type}</div>
+            </div>
+          </div>
+        ))}
       </main>
 
       <Footer />
