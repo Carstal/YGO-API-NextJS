@@ -5,7 +5,7 @@ import Footer from '@components/Footer'
 export async function getServerSideProps() {
   const res = await fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php?&startdate=03/08/2002&enddate=03/09/2002&dateregion=tcg_date");
   const cards = await res.json();
-  console.log(cards)
+  // console.log(cards)
   return { props: { cards }};
 }
 
@@ -18,8 +18,8 @@ export default function Home({cards}) {
       </Head>
 
       <main>
-        <Header title="LOB Cards" />
-        {cards.map((card) => (
+        <header>LOB Cards</header>
+        {cards.data.map((card) => (
           <div>
             <div className="info">
               <div className="id">ID:{card.id}</div>
@@ -30,7 +30,7 @@ export default function Home({cards}) {
         ))}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
