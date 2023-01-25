@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
+
+.name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.type {
+  text-align: center;
+}
+.container {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px 20px 10px;
+  border: 2px black solid;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.cardName p {
+  font-weight: bold;
+}
+
+.selectedM {
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  width: 60vw;
+  height: auto;
+  margin: 20px auto 20px auto;
+  padding: 20px 10px 20px 10px;
+  border: 2px black solid;
+  border-radius: 100px;
+  justify-content: center;
+}
+.img {
+  display: flex;
+  align-items: center;
+}
+.cardInfo {
+  display: flex;
+  text-align: justify;
+}
+
+.selectedST {
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  width: 60vw;
+  height: auto;
+  margin: 20px auto 20px auto;
+  padding: 20px 10px 20px 10px;
+  border: 2px black solid;
+  border-radius: 100px;
+  justify-content: center;
+}
+
