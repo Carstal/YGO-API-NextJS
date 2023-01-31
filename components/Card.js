@@ -99,14 +99,14 @@ return (
     // <div className={styles.card} onClick={handleSelectCard}>
         <div className={styles.info}>
         {/* <div className={styles.id}>ID:{card.id}</div> */}
-        <div className={styles.img}>
+        {/* <div className={styles.img}>
             <img
             src={card.card_images[0].image_url_small}
             alt="Card Image"
             height="200"
             width="150"
             />
-        </div>
+        </div> */}
         <div className={styles.name}>{card.name}</div>
         <div className={styles.type}>{card.type}</div>
         </div>
