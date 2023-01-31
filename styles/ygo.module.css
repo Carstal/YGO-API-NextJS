@@ -11,9 +11,14 @@
 }
 .container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
 }
 
 .card {
