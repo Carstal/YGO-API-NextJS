@@ -3,10 +3,6 @@ import {useCallback} from "react";
 import styles from "../styles/ygo.module.css";
 
 export default function Card({ card }) {
-    const handleSelectCard = useCallback(
-        (card) => window.alert(card.name),
-        []
-        )
 
 function getCard(ygoCard) {
     const type = ygoCard.type;
@@ -95,21 +91,17 @@ function getCard(ygoCard) {
     console.log(ygoCard.type);
 }
 return (
-    // <div className={styles.card} onClick={toggle}>
-    // <div className={styles.card} onClick={handleSelectCard}>
-        <div className={styles.info}>
-        {/* <div className={styles.id}>ID:{card.id}</div> */}
-        {/* <div className={styles.img}>
+    <div className={styles.info}>
+        <div className={styles.img}>
             <img
             src={card.card_images[0].image_url_small}
             alt="Card Image"
             height="200"
             width="150"
             />
-        </div> */}
+        </div>
         <div className={styles.name}>{card.name}</div>
         <div className={styles.type}>{card.type}</div>
-        </div>
-    // </div>
+    </div>
 );
 }
