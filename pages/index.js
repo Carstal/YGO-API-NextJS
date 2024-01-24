@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Card from "../components/Card";
 import styles from "../styles/ygo.module.css";
-import Modal from "react-modal";
-import CardModal from "../components/CardModal";
+// import Modal from "react-modal";
+// import CardModal from "../components/CardModal";
 import { useState, useEffect } from "react";
 
-Modal.setAppElement("#modal-display");
+// Modal.setAppElement("#modal-display");
 
 export async function getServerSideProps() {
   const res = await fetch(
