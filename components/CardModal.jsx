@@ -1,6 +1,8 @@
 
+import styles from "../styles/ygo.module.css";
 const ModalOne = ({card}) => {
 
+    console.log(card);  
 return (
     <div className="box_inner">
         <div className="description_wrap scrollable">
