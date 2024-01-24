@@ -47,7 +47,7 @@ export default function Home({ cards }) {
         <header className={styles.header}>
           <h1>LOB Cards</h1>
         </header>
-        <div id="modal-display">
+        <div id="modal-display" className={styles.modalDisplay}>
         <Modal
           isOpen={isOpenModalOne}
           onRequestClose={toggleModalOne}
