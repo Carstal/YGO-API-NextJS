@@ -33,6 +33,7 @@ export default function Home({ cards }) {
   }, [cardData]);
 
   const handleClickedCard = (card) => {
+    console.log(card);
     toggleModalOne(card);
   };
 
@@ -47,7 +48,7 @@ export default function Home({ cards }) {
         <header className={styles.header}>
           <h1>LOB Cards</h1>
         </header>
-        <div id="modal-display" className={styles.modalDisplay}>
+        {/* <div id="modal-display">
         <Modal
           isOpen={isOpenModalOne}
           onRequestClose={toggleModalOne}
@@ -63,13 +64,13 @@ export default function Home({ cards }) {
             {cardData && <CardModal card={cardData} />}
           </div>
         </Modal>
-        </div>
+        </div> */}
         <div className={styles.container}>
           {cards.data.map((card) => (
             <div
               key={card.id}
               className={styles.card}
-              onClick={() => handleClickedCard(card)}
+              // onClick={() => handleClickedCard(card)}
             >
               <Card card={card} />
             </div>
