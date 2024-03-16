@@ -6,4 +6,4 @@ Old application ported over to NextJS to test deployement to Netlify.
 # Tech Stack
 NextJS, React
 # 
-![LOB API](https://github.com/Carstal/YGO-API-NextJS/assets/43147122/910d038c-3abc-4c3c-9ae4-4664b9e93fba)
+![Screenshot 2024-03-16 at 7 39 19 PM](https://github.com/Carstal/YGO-API-NextJS/assets/43147122/ab74d2eb-d42d-492b-9a31-765406b0e59e)
